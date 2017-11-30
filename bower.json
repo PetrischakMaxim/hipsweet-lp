@@ -1,0 +1,16 @@
+{
+  "name": "workflow",
+  "authors": [
+    "Maxim Petischak <petrischak.maxim@gmail.com>"
+  ],
+  "description": "work",
+  "main": "index.html",
+  "license": "MIT",
+  "homepage": "",
+  "dependencies": {
+    "jquery": "1.8",
+    "normalize-css": "normalize.css#^7.0.0",
+    "bxslider-4": "bx-slider.js#^4.2.12",
+    "bootstrap": "bootstrap4#^3.3.7"
+  }
+}
