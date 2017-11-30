@@ -1,0 +1,53 @@
+.main {
+	background:url('../img/bg/acc-bg.jpg') no-repeat center center;
+	width: 100%;
+	background-size: 100%;
+	background-attachment: fixed;
+	//padding-top: 115px;
+}
+
+.main__title {
+	margin-bottom: 80px;
+	padding-top: 115px;
+}
+
+.acco__item {
+	position: relative;
+	@include font(arial);
+	margin: 10px 0;	
+
+	&.active .acco__triger {
+		color:$yellow;
+		border-color: $yellow;
+	}
+}
+
+.acco__triger {
+	display: inline;
+	@include font(arial);
+	color:$white;
+	font-size: 22px;
+	border-bottom: 2px dotted $white;
+	@include trs();
+
+	 &.active {
+		color:$yellow;
+		border-color: $yellow;
+	}
+
+}
+
+.acco__content {
+	display: none;
+	padding: 25px;
+	
+}
+
+
+
+.acco__content-item {
+		font-size: 15px;
+	}
+
+
+

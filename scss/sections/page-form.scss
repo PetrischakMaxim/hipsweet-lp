@@ -1,0 +1,118 @@
+.team__form {
+	background:url(../img/bg/form-bg.jpg) no-repeat center center;
+	background-size: cover;
+	border-radius: 35px;
+	padding: 30px 65px;
+	text-align: center;
+	margin-top: -6px;
+
+}
+
+.form__title {
+	margin-bottom: 10px;
+}
+
+
+
+.form__content {
+	background:rgba(0,0,0,.5);
+	border-radius: 35px;
+	padding: 20px 20px;
+
+	&-img {
+		float: left;
+		text-align: center;
+		img {
+			vertical-align: middle;
+			text-align: center;
+		}
+	}
+
+	&:after {
+		content:"";
+		clear: both;
+		display: table;
+	}
+}
+
+.form__slogan {
+	@include font(malina);
+	font-size: 30px;
+	color: $yellow;
+	margin-bottom: 10px;
+}
+
+
+.form {
+	float: left;
+	padding: 10px;
+	margin-left: 100px;
+	margin-right: 10px;
+	@include font(arial);
+
+
+	input {
+		display: block;
+		margin: 5px auto;
+		outline: none;
+
+
+		@include placeholder {
+  				color: $white;
+			}
+	}
+
+	&__input {
+		background-color: transparent;
+		border: 2px solid $white;
+		padding: 10px 20px;
+		color: $white;
+		font-size: 18px;
+		@include focus();
+	}
+}
+
+.form__label {
+	display: block;
+	margin: 10px auto;
+
+	input {
+		display: inline;
+		vertical-align: middle;
+	}
+}
+
+.form__btn {
+	position: relative;
+	background-color: transparent;
+	cursor: pointer;
+	outline: none;
+		border:none;
+
+	&:active {
+		outline: none;
+		border:none;
+	}
+
+	.fa {
+		position: absolute;
+		top:-25px;
+		left:50%;
+		transform: translateX(-50%);
+		display: block;
+		color: $white;
+		font-size: 40px;
+		@include trs();
+
+		 &:hover {
+		 	color: $yellow;
+		 	
+		 }
+
+		 &:active {
+		 	color: $hover;
+		 	outline: none;
+		border:none;
+		 }
+	}
+}

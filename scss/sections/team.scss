@@ -1,0 +1,129 @@
+.team {
+	//min-height: 1420px;
+	padding-top: 80px;
+	padding-bottom: 80px;
+	//background: $white;
+	background: #dfe1e1; /* Old browsers */
+background: -moz-linear-gradient(top, #dfe1e1 0%, #ffffff 50%, #d0d0cf 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top, #dfe1e1 0%,#ffffff 50%,#d0d0cf 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom, #dfe1e1 0%,#ffffff 50%,#d0d0cf 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#dfe1e1', endColorstr='#d0d0cf',GradientType=0 ); /* IE6-9 */
+
+	.container {
+		@extend .clearfix;
+	}
+	
+
+	&__title {
+		color: $navy;
+		float: left;
+		margin-right: 75px;
+
+		&:after {
+			display: table;
+			content: "";
+			clear:both;
+		}
+	}
+}
+
+.tabs {
+
+	&__list {
+		
+	}
+
+	&__item {
+		position: relative;
+		display: inline-block;
+		vertical-align: middle;
+		padding: 25px 20px 20px 25px;
+		background: transparent;
+		border-radius: 15px;
+		
+		&:after {
+			position: absolute;
+			content:'';
+			display: block;
+			bottom: -15px;
+			left: 40%;
+			width: 0;
+			height: 0;
+			border-style: solid;
+			border-width: 15px 17.5px 0 17.5px;
+			border-color: transparent transparent transparent transparent;
+		}
+
+		&.active {
+			background: $wine;
+
+			 .tabs__title{
+				color: $yellow;
+			}
+
+			.tabs__descr {
+				color: $white;
+			}
+			
+
+			&:after {
+				border-color: $wine transparent transparent transparent;
+			}
+		}
+
+		
+	}
+
+	&__link {
+		display: block;
+		padding: 10px;
+
+	}
+
+	&__title {
+		font-size: 25px;
+		@include font(malina);
+		color: $navy;
+	}
+
+	&__descr {
+		color: $text;
+		font-size: 18px;
+	}
+}
+
+.tabs__content {
+	padding-top: 55px;
+
+	&-item  {
+		display: none;
+
+		&.active {
+			display: flex;
+			justify-content: center;
+
+		}
+	}
+
+	
+
+	&-descr {
+		font-size: 14px;
+		color: $text;
+		font-style: italic;
+
+
+	}
+
+	&-center {
+		 img {
+		 	margin-top: -5px;
+		 }
+	}
+
+	.bold {
+			font-weight: 700;
+			color: $darkgray;
+		}
+
+}

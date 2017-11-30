@@ -1,0 +1,60 @@
+//colors  
+$white: #ffffff;
+$yellow: #ffa92b;
+$navy: #2b2f5f;
+$darkgray:#393939;
+$hover : #641a00;
+$wine : #883213;
+$text: #8d8d8d;
+
+//mixin
+
+@mixin placeholder {
+  &::-webkit-input-placeholder { @content; }
+  &:-moz-placeholder           { @content; }
+  &::-moz-placeholder          { @content; }
+  &:-ms-input-placeholder      { @content; }  
+}
+
+@mixin focus {
+  &::-webkit-input-placeholder { text-indent: 0px;   transition: text-indent 0.3s ease; }
+  &:-moz-placeholder           { text-indent: 0px;   transition: text-indent 0.3s ease; }
+  &::-moz-placeholder          { text-indent: 0px;   transition: text-indent 0.3s ease; }
+  &:-ms-input-placeholder      { text-indent: 0px;   transition: text-indent 0.3s ease; }
+  	&:focus::-webkit-input-placeholder {text-indent: 500px; transition: text-indent 0.3s ease;}
+	&:focus::-moz-placeholder          {text-indent: 500px; transition: text-indent 0.3s ease;}
+	&:focus:-moz-placeholder           {text-indent: 500px; transition: text-indent 0.3s ease;}
+	&:focus:-ms-input-placeholder      {text-indent: 500px; transition: text-indent 0.3s ease;}
+}
+
+
+
+
+//layout
+@import "base/fonts";
+@import "base/mixins";
+@import "base/normalize";
+@import "base/adjustment";
+@import "plugins/font-awesome";
+@import "plugins/jquery.bxslider.min";
+//media
+@import "adaptive/media";
+
+//sections
+@import "sections/header";
+@import "sections/header__slider";
+@import "sections/features";
+@import "sections/product";
+@import "sections/team";
+@import "sections/page-form";
+@import "sections/accordion";
+@import "sections/map";
+@import "sections/footer";
+
+@import "sections/popup";
+@import "plugins/animate";
+@import "adaptive/media";
+
+
+
+

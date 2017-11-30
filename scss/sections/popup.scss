@@ -1,0 +1,99 @@
+.popup {
+	display: none;
+	position: fixed;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	background: rgba(0,0,0,.7);
+	width: 100%;
+	height: 100%;
+
+	&__content{
+		position: fixed;
+		text-align: center;
+		left: 50%;
+		top: 10%;
+		transform: translateX(-50%);
+		background: rgba(black, 0.8);
+		border-radius: 35px;
+		padding: 10px 10px;
+	}
+
+
+	&-close{
+		position: absolute;
+		top: 0;
+		right: 5px;
+		font-size: 36px;
+		text-align: center;
+		background-color: transparent;
+		color: $yellow;
+		@include trs();
+		display: block;
+
+		&:hover {
+			color: $white;
+			transform: rotate(180deg);
+		}
+
+		&:active {
+			
+			color: $wine;
+		}
+
+	}
+
+}
+
+.form__popup {
+	display: block;
+	width: 400px;
+	height: 400px;
+	margin: 0 auto;
+	text-align: center;
+	background-color: transparent;
+
+	.form {
+		float: none;
+	}
+}
+.popup-form {
+	display: block;
+	margin: 20px auto;
+	border: none;
+
+
+	.form__input {
+		border: 2px solid $white;
+		margin: 10px auto;
+
+	}
+
+	
+}
+
+
+.input-submit {
+		background-color: transparent;
+		font-size: 16px;
+		@include font(arial);
+		border: none;
+		color: $white;
+		background:$yellow;
+		border-radius: 35px;
+		padding: 15px 35px;
+		cursor: pointer;
+		@include trs();
+
+		&:hover {
+		  background:rgba($yellow, 0.7);
+		  transform: translateY(-3px);
+		}
+
+		&:active {
+			background:$wine;
+			color: $yellow;
+		}
+	}
+

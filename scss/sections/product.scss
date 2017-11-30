@@ -1,0 +1,58 @@
+.product {
+	padding: 50px 0;
+	background: url("../img/bg/sect__bg.jpg") repeat-y center center;
+
+	&__title {
+		color: $navy;
+		text-align: center;
+	}
+
+	&__subtitle {
+		font-size: 14px;
+		text-align: center;
+		color: $wine;
+		width: 80%;
+		margin: 0 auto;
+
+		.form__link {
+			text-decoration: underline;
+			color: $navy;
+		}
+	}
+
+	&__list {
+		padding-top: 83px;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		text-align: center;
+		align-items: center;
+	}
+
+	&__item {
+		flex-basis: 25%;
+		margin-bottom: 60px;
+		margin-left: -5px;
+		
+	}
+
+	&__name {
+		font-size: 30px;
+		@include font(malina);
+		color: $navy;
+		padding-top: 7px;
+	}
+
+	&__descr {
+		text-align: center;
+		margin: 0 auto;
+		margin-top: 12px;
+		width: 80%;
+		color: rgba($wine,.7);
+		font-size: 14px;
+	}
+}
+
+.form__link {
+	font-weight: bold;
+}

@@ -1,0 +1,29 @@
+.sprite {
+    background-image: url(spritesheet.png);
+    background-repeat: no-repeat;
+    display: block;
+}
+
+.sprite-login {
+    width: 17px;
+    height: 17px;
+    background-position: -10px -10px;
+}
+
+.sprite-map {
+    width: 42px;
+    height: 59px;
+    background-position: -47px -10px;
+}
+
+.sprite-search {
+    width: 18px;
+    height: 17px;
+    background-position: -109px -10px;
+}
+
+.sprite-slder {
+    width: 18px;
+    height: 18px;
+    background-position: -109px -47px;
+}

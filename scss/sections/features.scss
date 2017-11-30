@@ -1,0 +1,73 @@
+.features {
+	padding-top: 113px;
+	min-height: 763px;
+	background: rgba(201,200,200,1);
+background: -moz-linear-gradient(left, rgba(201,200,200,1) 0%, rgba(225,226,225,1) 100%);
+background: -webkit-gradient(left top, right top, color-stop(0%, rgba(201,200,200,1)), color-stop(100%, rgba(225,226,225,1)));
+background: -webkit-linear-gradient(left, rgba(201,200,200,1) 0%, rgba(225,226,225,1) 100%);
+background: -o-linear-gradient(left, rgba(201,200,200,1) 0%, rgba(225,226,225,1) 100%);
+background: -ms-linear-gradient(left, rgba(201,200,200,1) 0%, rgba(225,226,225,1) 100%);
+background: linear-gradient(to right, rgba(201,200,200,1) 0%, rgba(225,226,225,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c9c8c8', endColorstr='#e1e2e1', GradientType=1 );
+	
+
+	&__title {
+		color:$navy;
+
+		padding-left: 71px;
+		margin-top: -16px;
+	}
+
+	&__descr {
+		width: 400px;
+		margin-top: 36px;
+		padding-left: 71px;
+		font-size: 15px;
+		color: $darkgray;
+		line-height: 22.237px;
+		font-weight: 400;
+	}
+
+	&__list {
+		display: flex;
+
+
+	}
+
+	&__item {
+		flex-basis: 150px;
+		margin-left: 60px;
+
+		&_text {
+			display: inline-block;
+			font-size: 16px;
+			@include font(malina);
+			color: rgba($darkgray,.6);
+			text-align: left;
+		}
+	}
+
+	&__image {
+		float: right;
+		width: 383px;
+		overflow: hidden;
+		margin-right: 30px;
+		margin-top: -44px;
+
+
+		&:after {
+			display: table;
+			content: "";
+			clear: both;
+			overflow:hidden;
+		}
+	}
+
+}
+
+.title {
+	font-size: 62px;
+	line-height: 1.20;
+	@include font(malina);
+}
+
